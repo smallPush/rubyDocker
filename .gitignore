@@ -36,3 +36,14 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore local gems
+/redsys-ruby/
+
+# Ignore OS files
+.DS_Store
+.directory
+
+# Ignore IDE files
+/.idea
+/.vscode

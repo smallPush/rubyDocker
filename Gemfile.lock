@@ -1,8 +1,8 @@
-GIT
-  remote: https://github.com/smallPush/redsys-ruby.git
-  revision: 1d514cdcdef0767a41e91607560633b19326f900
+PATH
+  remote: redsys-ruby
   specs:
-    redsys_ruby (0.1.0)
+    redsys-ruby (0.1.0)
+      railties (>= 7.0)
 
 GEM
   remote: https://rubygems.org/
@@ -274,7 +274,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.6)
-  redsys_ruby!
+  redsys-ruby!
   selenium-webdriver
   sprockets-rails
   stimulus-rails

@@ -10,6 +10,9 @@ WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 
+# Copy local gems if any
+COPY redsys-ruby /app/redsys-ruby
+
 # Install gems
 RUN bundle install
 

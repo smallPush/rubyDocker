@@ -9,6 +9,7 @@ services:
     build: .
     volumes:
       - .:/app
+      - ./redsys-ruby:/app/redsys-ruby
     ports:
       - "3000:3000"
     depends_on:
