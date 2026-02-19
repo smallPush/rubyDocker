@@ -1,5 +1,6 @@
-PATH
-  remote: redsys-ruby
+GIT
+  remote: https://github.com/smallPush/redsys-ruby
+  revision: 08b67f0bb0127de3e2fb2545c5a10e9f5a9e3011
   specs:
     redsys-ruby (0.1.0)
       railties (>= 7.0)

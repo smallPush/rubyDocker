@@ -1,7 +1,7 @@
 FROM ruby:3.3.0
 
 # Install dependencies
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs postgresql-client
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs postgresql-client git
 
 # Set working directory
 WORKDIR /app
@@ -9,9 +9,6 @@ WORKDIR /app
 # Copy Gemfile and Gemfile.lock
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
-
-# Copy local gems if any
-COPY redsys-ruby /app/redsys-ruby
 
 # Install gems
 RUN bundle install
